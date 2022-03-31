@@ -443,7 +443,7 @@ public class Main extends javax.swing.JFrame {
                 String selectedNo = (tabelBuku.getModel().getValueAt(row, 0).toString());
                 dbcon.Query("delete from buku where `id` = " + selectedNo + ";");
                 
-                tabelBuku.setModel(dbcon.readAutor());
+                tabelBuku.setModel(dbcon.readBuku());
 
                 System.out.println("Delete Success!");
                 JOptionPane.showMessageDialog(null, "Data berhasil dihapus!");
