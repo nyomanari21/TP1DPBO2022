@@ -323,7 +323,7 @@ public class Main extends javax.swing.JFrame {
                     + "values ('" + image + "', '" + penerbit + "', '" + autor + "','" + deskripsi + "');");
             
             tabelBuku.setModel(dbcon.readBuku());
-            JOptionPane.showMessageDialog(null, "Data berhasil dihapus!");
+            JOptionPane.showMessageDialog(null, "Data Buku berhasil ditambahkan!");
         }
         //bersihkan semua text field
         txtFieldImage.setText(null);
@@ -345,7 +345,7 @@ public class Main extends javax.swing.JFrame {
                     + "values ('" + image + "', '" + autor + "', '" + jumlah_buku + "');");
             
             tabelAutor.setModel(dbcon.readAutor());            
-            JOptionPane.showMessageDialog(null, "Data berhasil dihapus!");
+            JOptionPane.showMessageDialog(null, "Data Autor berhasil ditambahkan!");
         }
         //bersihkan semua text field
         txtFieldImage.setText(null);
